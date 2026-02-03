@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Special Orders | Golden Gulf Bakery</title>
+    <meta name="description" content="Request a limited special order from Golden Gulf Bakery. Approval is required and requests follow Mississippi cottage food law constraints.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Special Orders | Golden Gulf Bakery">
+    <meta property="og:description" content="Special order requests are limited and reviewed based on schedule, ingredients, and Mississippi cottage food law limits.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta name="theme-color" content="#0d3b66">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+  </head>
+  <body data-page="orders">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Golden Gulf Bakery home">
+          <img class="brand__logo" src="assets/logo.png" alt="Golden Gulf Bakery logo" width="56" height="56" loading="eager" decoding="async">
+          <span class="brand__text">
+            <span class="brand-name">Golden Gulf Bakery</span>
+            <span class="brand-tagline">Warm bread. Bright days</span>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span>Menu</span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breads.html">Our Breads</a></li>
+            <li><a href="orders.html">Special Orders</a></li>
+            <li><a href="cottage-food.html">Cottage Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-intro">
+        <div class="container">
+          <p class="eyebrow">Special orders</p>
+          <h1>Limited custom requests</h1>
+          <p>
+            Golden Gulf Bakery accepts limited special orders for yeast and sourdough breads. Requests are reviewed against bake capacity and Mississippi cottage food law requirements.
+          </p>
+          <p class="notice">Approval is required. Ingredient and quantity limits may apply.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <article class="card">
+            <h2>Before you request</h2>
+            <ul class="list-clean">
+              <li>Preorder early for sourdough timing and fermentation windows.</li>
+              <li>Special orders are not guaranteed until confirmed.</li>
+              <li>Availability may vary by bake schedule.</li>
+            </ul>
+          </article>
+
+          <section class="form-wrap" aria-labelledby="order-form-title">
+            <h2 id="order-form-title">Order request form</h2>
+            <p class="muted">Submitting opens your email app with a prefilled draft to <strong>goldengulfbakery@gmail.com</strong>.</p>
+            <form data-order-form action="mailto:goldengulfbakery@gmail.com" method="post" enctype="text/plain">
+              <div>
+                <label for="name">Name <span class="required">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div>
+                <label for="phone">Phone (optional)</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div>
+                <label for="items">Requested items <span class="required">*</span></label>
+                <textarea id="items" name="items" required></textarea>
+              </div>
+              <div>
+                <label for="date">Desired date <span class="required">*</span></label>
+                <input id="date" name="date" type="date" required>
+              </div>
+              <div>
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Generate Email Request</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <section>
+          <h2>Golden Gulf Bakery</h2>
+          <p>Owner/Operator: Stephanie Dubuisson</p>
+          <p>
+            <a href="tel:+12284477734">(228) 447-7734</a><br>
+            <a href="mailto:goldengulfbakery@gmail.com">goldengulfbakery@gmail.com</a><br>
+            <a href="https://www.facebook.com/goldengulfbakery" target="_blank" rel="noreferrer noopener">facebook.com/goldengulfbakery</a>
+          </p>
+          <p class="cottage-note">
+            Operates under Mississippi cottage food laws. Products are made in a home kitchen that is not subject to state inspection.
+          </p>
+        </section>
+        <section>
+          <h3>Quick links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breads.html">Our Breads</a></li>
+            <li><a href="orders.html">Special Orders</a></li>
+            <li><a href="cottage-food.html">Cottage Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <small>&copy; <span data-current-year></span> Golden Gulf Bakery. Availability may vary.</small>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+  </body>
+</html>
